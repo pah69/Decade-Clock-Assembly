@@ -1,2 +1,2 @@
-# Digital-Design-Project-Lab-5
-Digital Design Course  (Lab ... ) 
+# Decade Clock Assembly
+Digital Design Course
