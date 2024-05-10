@@ -156,14 +156,28 @@ display:
 
     # year
     li t3, 10
-    div t1, s6, t3
-    la t6, position_d1
+    addi t0, s6, 0
+    rem t1, t0, t3
+    div t0, t0, t3
+    la t6, position_y0
     jal display_sort
 
-    li t3, 10 
-    mul t1, t1, t3
-    sub t1, s6, t1
-    la t6, position_d0
+    li t3, 10
+    rem t1, t0, t3
+    div t0, t0, t3
+    la t6, position_y1
+    jal display_sort
+
+    li t3, 10
+    rem t1, t0, t3
+    div t0, t0, t3
+    la t6, position_y2
+    jal display_sort
+
+    li t3, 10
+    rem t1, t0, t3
+    div t0, t0, t3
+    la t6, position_y3
     jal display_sort
 
     j main_loop_cont
