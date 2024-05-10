@@ -1,483 +1,619 @@
+.data
+position:   # x,y
+    # row 0
+    .word 0x00000000
+    .word 0x00010000
+    .word 0x00020000
+    # row 1
+    .word 0x00000001
+    .word 0x00010001
+    .word 0x00020001
+    # row 2
+    .word 0x00000002
+    .word 0x00010002
+    .word 0x00020002
+    # row 3
+    .word 0x00000003
+    .word 0x00010003
+    .word 0x00020003
+    # row 4
+    .word 0x00000004
+    .word 0x00010004
+    .word 0x00020004
+    # row 5
+    .word 0x00000005
+    .word 0x00010005
+    .word 0x00020005
+    # row 6
+    .word 0x00000006
+    .word 0x00010006
+    .word 0x00020006
+    # row 7
+    .word 0x00000007
+    .word 0x00010007
+    .word 0x00020007
+    # row 8
+    .word 0x00000008
+    .word 0x00010008
+    .word 0x00020008
+    
+
+num_1_array:    # Color only
+    # row 0
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+    # row 1
+    .word 0x00000000
+    .word 0x00FF0000
+    .word 0x00000000
+    # row 2
+    .word 0x00000000
+    .word 0x00FF0000
+    .word 0x00000000
+    # row 3
+    .word 0x00000000
+    .word 0x00FF0000
+    .word 0x00000000
+    # row 4
+    .word 0x00000000
+    .word 0x00FF0000
+    .word 0x00000000
+    # row 5
+    .word 0x00000000
+    .word 0x00FF0000
+    .word 0x00000000
+    # row 6
+    .word 0x00000000
+    .word 0x00FF0000
+    .word 0x00000000
+    # row 7
+    .word 0x00000000
+    .word 0x00FF0000
+    .word 0x00000000
+    # row 8
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+
+num_2_array:    # Color only
+    # row 0
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+    # row 1
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 2
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 3
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 4
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 5
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 6
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00000000
+    # row 7
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 8
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+
+num_3_array:    # Color only
+    # row 0
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+    # row 1
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 2
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 3
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 4
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 5
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 6
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 7
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 8
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+
+num_4_array:
+    # row 0
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+    # row 1
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 2
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 3
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 4
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 5
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 6
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 7
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 8
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+
+num_5_array:
+    # row 0
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+    # row 1
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 2
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00000000
+    # row 3
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00000000
+    # row 4
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00000000
+    # row 5
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 6
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 7
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 8
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+
+num_6_array:
+    # row 0
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+    # row 1
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 2
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 3
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 4
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00000000
+    # row 5
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 6
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 7
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 8
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+
+num_7_array:
+    # row 0
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+    # row 1
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 2
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 3
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 4
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 5
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 6
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 7
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 8
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+
+num_8_array:
+    # row 0
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+    # row 1
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 2
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 3
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 4
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 5
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 6
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 7
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 8
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+
+num_9_array:
+    # row 0
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+    # row 1
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 2
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 3
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 4
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 5
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 6
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 7
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 8
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+
+num_0_array:
+    # row 0
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+    # row 1
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 2
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 3
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 4
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 5
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 6
+    .word 0x00FF0000
+    .word 0x00000000
+    .word 0x00FF0000
+    # row 7
+    .word 0x00FF0000
+    .word 0x00FF0000
+    .word 0x00FF0000
+    # row 8
+    .word 0x00000000
+    .word 0x00000000
+    .word 0x00000000
+
+.text
+display:
+    li s1, 0
+    jal clear_display
+    
+    li t3, 1
+    beq s1, t3, n_1
+
+    li t3, 2
+    beq s1, t3, n_2
+
+    li t3, 3
+    beq s1, t3, n_3
+
+    li t3, 4
+    beq s1, t3, n_4
+
+    li t3, 5
+    beq s1, t3, n_5
+
+    li t3, 6
+    beq s1, t3, n_6
+
+    li t3, 7
+    beq s1, t3, n_7
+   
+    li t3, 8
+    beq s1, t3, n_8
+    
+    li t3, 9
+    beq s1, t3, n_9
+
+    li t3, 0
+    beq s1, t3, n_0
+    
+end_display: #put breakpoint here
+
 # 01
 n_1:
     li a0, 0x100 # set indivisual dot
-    li a1, 0x00010001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
+    li t4, 26
+    la t5, num_1_array
+    la t6, position
+n_1_loop:
+    addi t4, t4, -1
+    lw a1, 0(t6)
+    lw a2, 0(t5)
     ecall
-    li a1, 0x00010002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-
-    jal clear_display
+    addi t5, t5, 4
+    addi t6, t6, 4
+    bnez t4, n_1_loop
+    jr ra
 
 # 02
 n_2:
-    li a0, 0x100
-    li a1, 0x00000001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
+    li a0, 0x100 # set indivisual dot
+    li t4, 26
+    la t5, num_2_array
+    la t6, position
+n_2_loop:
+    addi t4, t4, -1
+    lw a1, 0(t6)
+    lw a2, 0(t5)
     ecall
-    li a1, 0x00010001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-
-    jal clear_display
+    addi t5, t5, 4
+    addi t6, t6, 4
+    bnez t4, n_2_loop
+    jr ra
 
 # 03
 n_3:
-    li a0, 0x100
-    li a1, 0x00000001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
+    li a0, 0x100 # set indivisual dot
+    li t4, 26
+    la t5, num_3_array
+    la t6, position
+n_3_loop:
+    addi t4, t4, -1
+    lw a1, 0(t6)
+    lw a2, 0(t5)
     ecall
-    li a1, 0x00010001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-
-    jal clear_display
+    addi t5, t5, 4
+    addi t6, t6, 4
+    bnez t4, n_3_loop
+    jr ra
 
 # 04
 n_4:
-    li a0, 0x100
-    li a1, 0x00000001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
+    li a0, 0x100 # set indivisual dot
+    li t4, 26
+    la t5, num_4_array
+    la t6, position
+n_4_loop:
+    addi t4, t4, -1
+    lw a1, 0(t6)
+    lw a2, 0(t5)
     ecall
-    li a1, 0x00020001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-
-    jal clear_display
+    addi t5, t5, 4
+    addi t6, t6, 4
+    bnez t4, n_4_loop
+    jr ra
 
 # 05
 n_5:
-    li a0, 0x100
-    li a1, 0x00000001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
+    li a0, 0x100 # set indivisual dot
+    li t4, 26
+    la t5, num_5_array
+    la t6, position
+n_5_loop:
+    addi t4, t4, -1
+    lw a1, 0(t6)
+    lw a2, 0(t5)
     ecall
-    li a1, 0x00010001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-
-    jal clear_display
-
+    addi t5, t5, 4
+    addi t6, t6, 4
+    bnez t4, n_5_loop
+    jr ra
 
 # 06
 n_6:
-    li a0, 0x100
-    li a1, 0x00000001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
+    li a0, 0x100 # set indivisual dot
+    li t4, 26
+    la t5, num_6_array
+    la t6, position
+n_6_loop:
+    addi t4, t4, -1
+    lw a1, 0(t6)
+    lw a2, 0(t5)
     ecall
-    li a1, 0x00010001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-
-    jal clear_display
+    addi t5, t5, 4
+    addi t6, t6, 4
+    bnez t4, n_6_loop
+    jr ra    
 
 # 07
 n_7:
-    li a0, 0x100
-    li a1, 0x00000001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
+    li a0, 0x100 # set indivisual dot
+    li t4, 26
+    la t5, num_7_array
+    la t6, position
+n_7_loop:
+    addi t4, t4, -1
+    lw a1, 0(t6)
+    lw a2, 0(t5)
     ecall
-    li a1, 0x00010001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
+    addi t5, t5, 4
+    addi t6, t6, 4
+    bnez t4, n_7_loop
+    jr ra
 
-    jal clear_display
-
-#08
+# 08
 n_8:
-    li a0, 0x100
-    li a1, 0x00000001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
+    li a0, 0x100 # set indivisual dot
+    li t4, 26
+    la t5, num_8_array
+    la t6, position
+n_8_loop:
+    addi t4, t4, -1
+    lw a1, 0(t6)
+    lw a2, 0(t5)
     ecall
-    li a1, 0x00010001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
+    addi t5, t5, 4
+    addi t6, t6, 4
+    bnez t4, n_8_loop
+    jr ra
 
-    jal clear_display
-
-#09
+# 07
 n_9:
-    li a0, 0x100
-    li a1, 0x00000001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
+    li a0, 0x100 # set indivisual dot
+    li t4, 26
+    la t5, num_9_array
+    la t6, position
+n_9_loop:
+    addi t4, t4, -1
+    lw a1, 0(t6)
+    lw a2, 0(t5)
     ecall
-    li a1, 0x00010001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-
-    jal clear_display
+    addi t5, t5, 4
+    addi t6, t6, 4
+    bnez t4, n_9_loop
+    jr ra
 
 # 00
 n_0:
-    li a0, 0x100
-    li a1, 0x00000001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
+    li a0, 0x100 # set indivisual dot
+    li t4, 26
+    la t5, num_0_array
+    la t6, position
+n_0_loop:
+    addi t4, t4, -1
+    lw a1, 0(t6)
+    lw a2, 0(t5)
     ecall
-    li a1, 0x00010001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020001 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020002 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020003 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020004 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020005 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020006 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00000007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00010007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-    li a1, 0x00020007 # a1[31:16] is x, [15:0] is y
-    li a2, 0x00FF0000 #red
-    ecall
-
-    jal clear_display
+    addi t5, t5, 4
+    addi t6, t6, 4
+    bnez t4, n_0_loop
+    jr ra
 
 clear_display:
     li  a0, 0x101        
