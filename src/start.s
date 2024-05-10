@@ -89,10 +89,12 @@ setyear:
 # cointain tag: clear_display, display
 
 display:
+    # to set position through display_sort > n_x use:
     # la t6, <position>
 
-    jal clear_display
+    jal clear_display 
 
+    # second
     li t3, 10
     div t1, s1, t3
     la t6, position_s1
@@ -104,6 +106,7 @@ display:
     la t6, position_s0
     jal display_sort
 
+    # minutes
     li t3, 10
     div t1, s2, t3
     la t6, position_m1
@@ -115,6 +118,7 @@ display:
     la t6, position_m0
     jal display_sort
 
+    # hour
     li t3, 10
     div t1, s3, t3
     la t6, position_h1
@@ -124,6 +128,42 @@ display:
     mul t1, t1, t3
     sub t1, s3, t1
     la t6, position_h0
+    jal display_sort
+
+    # day
+    li t3, 10
+    div t1, s4, t3
+    la t6, position_d1
+    jal display_sort
+
+    li t3, 10 
+    mul t1, t1, t3
+    sub t1, s4, t1
+    la t6, position_d0
+    jal display_sort
+
+    # month
+    li t3, 10
+    div t1, s5, t3
+    la t6, position_mo1
+    jal display_sort
+
+    li t3, 10 
+    mul t1, t1, t3
+    sub t1, s5, t1
+    la t6, position_mo0
+    jal display_sort
+
+    # year
+    li t3, 10
+    div t1, s6, t3
+    la t6, position_d1
+    jal display_sort
+
+    li t3, 10 
+    mul t1, t1, t3
+    sub t1, s6, t1
+    la t6, position_d0
     jal display_sort
 
     j main_loop_cont
@@ -348,6 +388,310 @@ n_0_loop:
 ####################################################
 .data
 day_in_month: .byte 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
+
+position_d1:
+    # row 0
+    .word 0x0000000C
+    .word 0x0001000C
+    .word 0x0002000C
+    # row 1
+    .word 0x0000000D
+    .word 0x0001000D
+    .word 0x0002000D
+    # row 2
+    .word 0x0000000E
+    .word 0x0001000E
+    .word 0x0002000E
+    # row 3
+    .word 0x0000000F
+    .word 0x0001000F
+    .word 0x0002000F
+    # row 4
+    .word 0x00000010
+    .word 0x00010010
+    .word 0x00020010
+    # row 5
+    .word 0x00000011
+    .word 0x00010011
+    .word 0x00020011
+    # row 6
+    .word 0x00000012
+    .word 0x00010012
+    .word 0x00020012
+    # row 7
+    .word 0x00000013
+    .word 0x00010013
+    .word 0x00020013
+    # row 8
+    .word 0x00000014
+    .word 0x00010014
+    .word 0x00020014
+
+position_d0:
+    # row 0
+    .word 0x0004000C
+    .word 0x0005000C
+    .word 0x0006000C
+    # row 1
+    .word 0x0004000D
+    .word 0x0005000D
+    .word 0x0006000D
+    # row 2
+    .word 0x0004000E
+    .word 0x0005000E
+    .word 0x0006000E
+    # row 3
+    .word 0x0004000F
+    .word 0x0005000F
+    .word 0x0006000F
+    # row 4
+    .word 0x00040010
+    .word 0x00050010
+    .word 0x00060010
+    # row 5
+    .word 0x00040011
+    .word 0x00050011
+    .word 0x00060011
+    # row 6
+    .word 0x00040012
+    .word 0x00050012
+    .word 0x00060012
+    # row 7
+    .word 0x00040013
+    .word 0x00050013
+    .word 0x00060013
+    # row 8
+    .word 0x00040014
+    .word 0x00050014
+    .word 0x00060014
+
+position_mo1:
+    # row 0
+    .word 0x000A000C
+    .word 0x000B000C
+    .word 0x000C000C
+    # row 1
+    .word 0x000A000D
+    .word 0x000B000D
+    .word 0x000C000D
+    # row 2
+    .word 0x000A000E
+    .word 0x000B000E
+    .word 0x000C000E
+    # row 3
+    .word 0x000A000F
+    .word 0x000B000F
+    .word 0x000C000F
+    # row 4
+    .word 0x000A0010
+    .word 0x000B0010
+    .word 0x000C0010
+    # row 5
+    .word 0x000A0011
+    .word 0x000B0011
+    .word 0x000C0011
+    # row 6
+    .word 0x000A0012
+    .word 0x000B0012
+    .word 0x000C0012
+    # row 7
+    .word 0x000A0013
+    .word 0x000B0013
+    .word 0x000C0013
+    # row 8
+    .word 0x000A0014
+    .word 0x000B0014
+    .word 0x000C0014
+
+position_mo0:
+    # row 0
+    .word 0x000E000C
+    .word 0x000F000C
+    .word 0x0010000C
+    # row 1
+    .word 0x000E000D
+    .word 0x000F000D
+    .word 0x0010000D
+    # row 2
+    .word 0x000E000E
+    .word 0x000F000E
+    .word 0x0010000E
+    # row 3
+    .word 0x000E000F
+    .word 0x000F000F
+    .word 0x0010000F
+    # row 4
+    .word 0x000E0010
+    .word 0x000F0010
+    .word 0x00100010
+    # row 5
+    .word 0x000E0011
+    .word 0x000F0011
+    .word 0x00100011
+    # row 6
+    .word 0x000E0012
+    .word 0x000F0012
+    .word 0x00100012
+    # row 7
+    .word 0x000E0013
+    .word 0x000F0013
+    .word 0x00100013
+    # row 8
+    .word 0x000E0014
+    .word 0x000F0014
+    .word 0x00100014
+
+position_y3:
+    # row 0
+    .word 0x0014000C
+    .word 0x0015000C
+    .word 0x0016000C
+    # row 1
+    .word 0x0014000D
+    .word 0x0015000D
+    .word 0x0016000D
+    # row 2
+    .word 0x0014000E
+    .word 0x0015000E
+    .word 0x0016000E
+    # row 3
+    .word 0x0014000F
+    .word 0x0015000F
+    .word 0x0016000F
+    # row 4
+    .word 0x00140010
+    .word 0x00150010
+    .word 0x00160010
+    # row 5
+    .word 0x00140011
+    .word 0x00150011
+    .word 0x00160011
+    # row 6
+    .word 0x00140012
+    .word 0x00150012
+    .word 0x00160012
+    # row 7
+    .word 0x00140013
+    .word 0x00150013
+    .word 0x00160013
+    # row 8
+    .word 0x00140014
+    .word 0x00150014
+    .word 0x00160014
+
+position_y2:
+    # row 0
+    .word 0x0018000C
+    .word 0x0019000C
+    .word 0x001A000C
+    # row 1
+    .word 0x0018000D
+    .word 0x0019000D
+    .word 0x001A000D
+    # row 2
+    .word 0x0018000E
+    .word 0x0019000E
+    .word 0x001A000E
+    # row 3
+    .word 0x0018000F
+    .word 0x0019000F
+    .word 0x001A000F
+    # row 4
+    .word 0x00180010
+    .word 0x00190010
+    .word 0x001A0010
+    # row 5
+    .word 0x00180011
+    .word 0x00190011
+    .word 0x001A0011
+    # row 6
+    .word 0x00180012
+    .word 0x00190012
+    .word 0x001A0012
+    # row 7
+    .word 0x00180013
+    .word 0x00190013
+    .word 0x001A0013
+    # row 8
+    .word 0x00180014
+    .word 0x00190014
+    .word 0x001A0014
+
+position_y1:
+    # row 0
+    .word 0x001C000C
+    .word 0x001D000C
+    .word 0x001E000C
+    # row 1
+    .word 0x001C000D
+    .word 0x001D000D
+    .word 0x001E000D
+    # row 2
+    .word 0x001C000E
+    .word 0x001D000E
+    .word 0x001E000E
+    # row 3
+    .word 0x001C000F
+    .word 0x001D000F
+    .word 0x001E000F
+    # row 4
+    .word 0x001C0010
+    .word 0x001D0010
+    .word 0x001E0010
+    # row 5
+    .word 0x001C0011
+    .word 0x001D0011
+    .word 0x001E0011
+    # row 6
+    .word 0x001C0012
+    .word 0x001D0012
+    .word 0x001E0012
+    # row 7
+    .word 0x001C0013
+    .word 0x001D0013
+    .word 0x001E0013
+    # row 8
+    .word 0x001C0014
+    .word 0x001D0014
+    .word 0x001E0014
+
+position_y0:
+    # row 0
+    .word 0x0020000C
+    .word 0x0021000C
+    .word 0x0022000C
+    # row 1
+    .word 0x0020000D
+    .word 0x0021000D
+    .word 0x0022000D
+    # row 2
+    .word 0x0020000E
+    .word 0x0021000E
+    .word 0x0022000E
+    # row 3
+    .word 0x0020000F
+    .word 0x0021000F
+    .word 0x0022000F
+    # row 4
+    .word 0x00200010
+    .word 0x00210010
+    .word 0x00220010
+    # row 5
+    .word 0x00200011
+    .word 0x00210011
+    .word 0x00220011
+    # row 6
+    .word 0x00200012
+    .word 0x00210012
+    .word 0x00220012
+    # row 7
+    .word 0x00200013
+    .word 0x00210013
+    .word 0x00220013
+    # row 8
+    .word 0x00200014
+    .word 0x00210014
+    .word 0x00220014
 
 position_h1:   # x,y
     # row 0
