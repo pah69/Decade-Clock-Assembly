@@ -1,11 +1,11 @@
 .text
 main:
     # initialize value
-    li s1, 0    # second
-    li s2, 0    # minute
-    li s3, 0    # hour
-    li s4, 1    # day
-    li s5, 1    # month
+    li s1, 50    # second
+    li s2, 59    # minute
+    li s3, 23    # hour
+    li s4, 28    # day
+    li s5, 2    # month
     li s6, 2024 # year
 main_loop:
     jal display
@@ -15,7 +15,7 @@ main_loop:
 
 # DELAY TAGS
 delay:
-    li  t2, 1200             # Load n value to t2
+    li  t2, 1100             # Load n value to t2
     #li  t2, 5             # low delay for debug
     #li  t3, 0x01
 loop_delay:
